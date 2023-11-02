@@ -7,9 +7,44 @@
         <title>Next Website</title>
 
         <link rel="stylesheet" type="text/css" href="styles/general.css" />
+        <link rel="stylesheet" type="text/css" href="styles/nav.css"/>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css"
+        />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+        />
     </head>
 
     <body>
-
+         <!--Navbar Section-->
+         <nav class="navbar">
+            <div class="navbar__container">
+              <a href="/" id="navbar__logo"><i class="far fa-gem"></i>NEXT</a>
+              <div id="mobile-menu" class="navbar__toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <ul class="navbar__menu">
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links"> Home </a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links"> Tech </a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links"> Products </a>
+                </li>
+                <li class="navbar__btn">
+                  <a href="/" class="button"> Sign Up </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </body>
+
+    <script src="app.js"></script>
 </html>
