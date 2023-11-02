@@ -1,0 +1,123 @@
+.services,
+.services__container {
+  display: flex;
+}
+
+.services h2, .services__card p, .services__card button {
+    position: absolute;
+    left: 30px;
+}
+
+.services__card, .services__card button {
+    color: #fff;
+    border-radius: 4px;
+}
+
+.services__card button, .services__card:hover {
+    cursor: pointer;
+}
+
+.services {
+  background-color: #141414;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.services h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.services__container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.services__card {
+  width: 400px;
+  height: 525px;
+  margin: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("/images/VR.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.services__card:nth-child(2) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("/images/VR2.jpg");
+}
+
+.services h2 {
+    top: 350px;
+}
+
+.services__card p {
+    top: 400px;
+}
+
+
+.services__card button {
+    top:440px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #f77062;
+    font-size: 1rem;
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 960px) {
+    .services {
+        height: 1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services {
+        height: 1400px;
+    }
+
+    .services h1 {
+        font-size: 1.2rem;
+    }
+
+    .services__card {
+        width: 300px;
+    }
+}
