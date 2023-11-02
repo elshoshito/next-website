@@ -1,0 +1,141 @@
+.main,
+.main__container {
+  background-color: #141414;
+}
+
+.main__content h1,
+.main__content h2 {
+  font-size: 4rem;
+  background-size: 100%;
+  background-color: #ff8177;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content p, .main__btn, .main__btn a, .main__btn:hover {
+  color: #fff;
+}
+
+.main__btn, .main__btn a {
+  position: relative;
+}
+
+.main__btn, .main__btn:after {
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__container, .main__btn:hover:after {
+  width: 100%;
+}
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  max-width: 1300px;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 0 50px;
+  z-index: 1;
+}
+
+.main__content h1 {
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+.main__content h2 {
+  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main__btn {
+  background-image: linear-gradient(to top, #f77962 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+}
+
+.main__btn a {
+  z-index: 2;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+}
+
+.main__img--container {
+  text-align: center;
+}
+
+#main__img {
+  width: 80%;
+  height: 80%;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px){
+  .main__container {
+    grid-template-columns: auto;
+  }
+
+  .main__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main__content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .main__content h2 {
+    font-size: 3rem;
+  }
+
+  .main__content p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}
